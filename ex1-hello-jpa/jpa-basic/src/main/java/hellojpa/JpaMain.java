@@ -16,7 +16,15 @@ public class JpaMain {
         try {
             tx.begin();
 
-            /* insert
+           /* select
+
+                Member findMember = em.find(Member.class,1L );
+                System.out.println("id :" +  findMember.getId());
+                System.out.println("name : " + findMember.getName());
+
+            */
+            
+              /* insert
 
                 Member member = new Member();
                 member.setId(1L);
@@ -31,7 +39,6 @@ public class JpaMain {
                 Member findMember = em.find(Member.class,1L );
                 System.out.println("id :" +  findMember.getId());
                 System.out.println("name : " + findMember.getName());
-
 
 
             /* update
