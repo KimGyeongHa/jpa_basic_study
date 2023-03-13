@@ -26,13 +26,13 @@ public class JpaMain {
                 tx.commit();
 
             */
-           /* select
+
 
                 Member findMember = em.find(Member.class,1L );
                 System.out.println("id :" +  findMember.getId());
                 System.out.println("name : " + findMember.getName());
 
-            */
+
 
             /* update
 
@@ -59,6 +59,23 @@ public class JpaMain {
                 }
 
             */
+
+
+            /* flush
+            * 영속성 컨텍스트의 변경내용을 데이터베이스에 동기화
+            * */
+
+            /* detach
+            * 준영속 상태로 전환
+            * */
+
+            /* clear
+            * 영속성 컨텍스트 전체를 초기화
+            **/
+
+            /* close
+            * 영속성 컨텍스트 종료
+            **/
 
         }catch (Exception e){
             tx.rollback();
